@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1440px;
+            margin: 50px auto;
+            background: #e7e7e7;
+            padding: 0 20px;
+        }
+        .container {
+            background: #f2f2f2;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container__item {
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .container-slider {
+            background: #f2f2f2;
+            flex-direction: column;
+            justify-content: space-between;
+            display: none;
+        }
+        .container__item_slider {
+            display: flex!important;
+            justify-content: center;
+        }
+        @media screen and (max-width: 1180px) {
+            .container {
+                display: none;
+            }
+            .container-slider {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__item">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Kontaktlose Lieferung
+        </div>
+        <div class="container__item">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Monatlich 5 neue Beauty-Must-haves
+        </div>
+        <div class="container__item">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Exklusive SMS Updates
+        </div>
+        <div class="container__item">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Wechselnde Rabattaktionen
+        </div>
+        <div class="container__item">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Tausende zufriedene Kunden weltweit
+        </div>
+    </div>
+    <div class="container-slider">
+        <div class="container__item container__item_slider">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Kontaktlose Lieferung
+        </div>
+        <div class="container__item container__item_slider">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Monatlich 5 neue Beauty-Must-haves
+        </div>
+        <div class="container__item container__item_slider">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Exklusive SMS Updates
+        </div>
+        <div class="container__item container__item_slider">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Wechselnde Rabattaktionen
+        </div>
+        <div class="container__item container__item_slider">
+            <div class="container__icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill" d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                </svg>
+            </div>
+            Tausende zufriedene Kunden weltweit
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
